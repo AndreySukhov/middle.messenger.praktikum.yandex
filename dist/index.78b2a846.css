@@ -1,0 +1,10 @@
+:root {
+  --varColor: green;
+}
+
+html {
+  background-color: green;
+  background-color: var(--varColor);
+}
+
+/*# sourceMappingURL=index.78b2a846.css.map */
