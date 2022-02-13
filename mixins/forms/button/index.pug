@@ -1,0 +1,10 @@
+mixin button(text, theme, plain)
+  if (attributes.href)
+    a.button(class= `button--${theme || 'primary'} ${plain ? 'button--plain' : ''}`)&attributes(attributes) #{text}
+      block
+  else
+    button.button(class= `button--${theme || 'primary'} ${plain ? 'button--plain' : ''}`)&attributes(attributes) #{text}
+      block
+
+
+

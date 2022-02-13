@@ -1,0 +1,6 @@
+mixin textMessage(type, dateTime)
+  div(class=`chat-text-message--${type}`).chat-text-message
+    div.chat-text-message__dateTime
+      span.text.text--s.text--secondary #{dateTime}
+    div.text.text--m
+      block

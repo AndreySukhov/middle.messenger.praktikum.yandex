@@ -1,0 +1,24 @@
+mixin messagePreview(avatarSrc, userName, dateTime, text, unreadCount, isByUser)
+  div.message-preview
+    button(type="button").message-preview__btn
+    aside
+      +circleWrap('secondary', 45)
+        +avatar(avatarSrc)
+    div.message-preview__body
+      div.message-preview-content-row
+        div.message-preview__user-name
+            span.text.text--s.text--bold #{userName}
+        span.text.text--s.text--secondary #{dateTime}
+      div.message-preview-content-row
+        p.message-preview__text
+          if (isByUser)
+            span.text.text--bold.text--m Вы:
+            |
+          span.text.text--s.text--secondary.text--secondary #{text}
+        div.message-preview__unread
+          if unreadCount
+            +circleWrap('primary', 20).message-preview__unread-count
+              | #{unreadCount}
+
+
+

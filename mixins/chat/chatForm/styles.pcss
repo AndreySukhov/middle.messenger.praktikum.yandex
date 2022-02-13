@@ -1,0 +1,32 @@
+.chat-form {
+    display: grid;
+    align-items: center;
+    grid-gap: 0 14px;
+    justify-content: space-between;
+    grid-template-columns: 28px 1fr 28px;
+}
+
+.chat-form__submit,
+.chat-form__media {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.chat-form__submit:disabled,
+.chat-form__media:disabled {
+    cursor: not-allowed;
+}
+
+.chat-form__textarea {
+    background: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    color: var(--textSecondary);
+    font-size: 0.75rem;
+    -webkit-appearance: none;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+}

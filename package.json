@@ -1,15 +1,19 @@
 {
   "name": "middle.messenger.praktikum.yandex",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "### Откройте pull request в ветку main из ветки, где вы разрабатывали проект, и добавьте ссылку на этот pr в README.md в ветке main.  ### ВАЖНО: pull request должен называться “Sprint i” (i — номер спринта).",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.pug --port 3000",
+    "dev": "parcel index.pug",
+    "start": "node server.js",
     "build": "parcel build index.pug"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AndreySukhov/middle.messenger.praktikum.yandex.git"
+  },
+  "engines": {
+    "node": "16.14.0"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +28,8 @@
   },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.2.1",
+    "express": "^4.17.2",
+    "path": "^0.12.7",
     "postcss": "^8.4.6",
     "postcss-custom-properties": "^12.1.4",
     "postcss-import": "^14.0.2",

@@ -1,0 +1,10 @@
+mixin chatForm()
+  form.chat-form
+    button(type="button").chat-form__media
+      include ../../../assets/icons/clip.svg
+    div.chat-form__body
+      textarea(name="message").chat-form__textarea
+    button(type="submit").chat-form__submit
+      +circleWrap('primary', 28)
+        include ../../../assets/icons/arrow-right.svg
+

@@ -1,0 +1,9 @@
+mixin input(label, error)
+  div(class= error ? 'input-view--error' : '').input-view
+    label.input-container
+      input.input&attributes(attributes)
+      div.input__label-text.text--secondary #{label}
+    div.input-error.text--s #{error}
+
+
+

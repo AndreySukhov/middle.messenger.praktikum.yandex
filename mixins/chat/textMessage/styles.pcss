@@ -1,0 +1,22 @@
+.chat-text-message {
+    padding: 10px;
+    position: relative;
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: var(--cardRadius);
+}
+
+.chat-text-message__dateTime {
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+}
+
+.chat-text-message--incoming {
+    background: var(--incomingMessageBg);
+}
+
+.chat-text-message--outgoing {
+    background: var(--outgoingMessageBg);
+    margin-left: auto;
+}

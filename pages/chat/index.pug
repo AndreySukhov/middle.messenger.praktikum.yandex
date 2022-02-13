@@ -1,0 +1,52 @@
+include ../../mixins/forms/button/index
+
+include ../../mixins/chat/messagePreview/index
+include ../../mixins/chat/chatHeader/index
+include ../../mixins/chat/chatForm/index
+include ../../mixins/chat/chatMessaggesList/index
+include ../../mixins/chat/textMessage/index
+include ../../mixins/chat/photoMessage/index
+
+include ../../mixins/markupHelpers/circleWrap/index
+include ../../mixins/markupHelpers/box/index
+include ../../mixins/markupHelpers/avatar/index
+
+block content
+  div.chat-layout
+    aside.chat-layout-aside
+      div.chat-layout-aside__header
+        div.chat-layout-aside__link
+          +button('Профиль', 'secondary', true)(href="/profile")
+            |
+            include ../../assets/icons/chevron-right.svg
+        div
+          form
+            input.chat-list-search(type="search", placeholder="Поиск")
+      div.chat-layout-aside__body
+        ul.chat-list
+          li.chat-list__item
+            +messagePreview(false, 'Андрей', '10:59', 'Изображение', 2, false)
+          li.chat-list__item
+            +messagePreview(false, 'Киноклуб', '10:59', 'Изображение', false, true)
+          li.chat-list__item
+            +messagePreview(false, 'Илья', '15:12', 'Друзья, у меня для вас особенный выпуск новостей! Друзья, у меня для вас особенный выпуск новостей!', 5, false)
+          li.chat-list__item
+            +messagePreview(false, 'тет-а-теты тет-а-теты тет-а-теты', 'чт', 'И Human Interface Guidelines и Material Design рекомендуют... И Human Interface Guidelines и Material Design рекомендуют...', 20, true)
+          li.chat-list__item
+            +messagePreview(false, 'Андрей', '10:59', 'Изображение', 2, false)
+          li.chat-list__item
+            +messagePreview(false, 'Киноклуб', '10:59', 'Изображение', false, true)
+          li.chat-list__item
+            +messagePreview(false, 'Илья', '15:12', 'Друзья, у меня для вас особенный выпуск новостей! Друзья, у меня для вас особенный выпуск новостей!', 5, false)
+          li.chat-list__item
+            +messagePreview(false, 'тет-а-теты тет-а-теты тет-а-теты', 'чт', 'И Human Interface Guidelines и Material Design рекомендуют... И Human Interface Guidelines и Material Design рекомендуют...', 20, true)
+    div.chat-layout-main
+        div.chat-layout-main__header
+          +chatHeader(null, 'Иван')
+        div.chat-layout-main__body
+          +chatMessaggesList()
+        div.chat-layout-main__footer
+          +chatForm()
+
+
+

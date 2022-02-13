@@ -1,0 +1,8 @@
+mixin errorStatus(code, message)
+  div.error-status
+    if code
+      div.text.text--xl.error-status__code #{code}
+    if message
+      div.text.text--l.error-status__message #{message}
+    block
+

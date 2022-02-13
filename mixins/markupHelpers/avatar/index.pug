@@ -1,0 +1,7 @@
+mixin avatar(size, src)
+  +circleWrap('secondary', size)&attributes(attributes).avatar
+      if (src)
+        img(src=src).avatar__img
+      else
+        div.avatar__img--default
+          include ../../../assets/icons/user.svg
