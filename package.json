@@ -4,7 +4,7 @@
   "description": "chat app",
   "scripts": {
     "dev": "parcel index.pug",
-    "start": "node server.js",
+    "start": "npm install && npm run build && node ./server.js",
     "build": "parcel build index.pug --public-url ./"
   },
   "repository": {
