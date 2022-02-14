@@ -11,3 +11,5 @@ Chat web application
 [public host](https://nervous-curran-12c529.netlify.app/)
 [repository](https://github.com/AndreySukhov/middle.messenger.praktikum.yandex)
 [pr](https://github.com/AndreySukhov/middle.messenger.praktikum.yandex/pull/1)
+
+design resources and description located in ui folder

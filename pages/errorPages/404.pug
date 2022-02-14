@@ -4,5 +4,5 @@ include ../../mixins/forms/button/index
 
 block content
   +errorPageLayout()
-    +errorStatus('404', 'Не туда попали', 'Назад к чатам', '/back')
-      +button('Назад к чатам', undefined, true)(href='/chat')
+    +errorStatus('404', 'Не туда попали', 'Назад к чатам', 'index.pug')
+      +button('Назад к чатам', undefined, true)(href='/index.pug')

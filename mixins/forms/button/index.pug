@@ -5,6 +5,3 @@ mixin button(text, theme, plain)
   else
     button.button(class= `button--${theme || 'primary'} ${plain ? 'button--plain' : ''}`)&attributes(attributes) #{text}
       block
-
-
-

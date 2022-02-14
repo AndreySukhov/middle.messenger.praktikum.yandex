@@ -10,7 +10,7 @@ include ../../mixins/markupHelpers/avatar/index
 block content
   div.profile-layout
     aside.profile-layout__aside
-      a(href="/chat").aside-clickable-area
+      a(href="/index.pug").aside-clickable-area
         +circleWrap('primary', 28)
           include ../../assets/icons/arrow-left.svg
     div.profile-layout__main
@@ -36,7 +36,7 @@ block content
                 +button('Сохранить')(type="submit")
           +formRow(true)
             div.button-row
-              +button('Изменить пароль', undefined, true)(href="/profile-password")
+              +button('Изменить пароль', undefined, true)(href="/profile-password.pug")
             div.button-row
               +button('Выйти', 'warning', true)(type="button")
 

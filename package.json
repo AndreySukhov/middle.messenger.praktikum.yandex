@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "chat app",
   "scripts": {
-    "dev": "parcel index.pug",
+    "dev": "parcel index.pug 404.pug 500.pug login.pug profile.pug profile-password.pug registration.pug",
     "start": "npm install && npm run build && node ./server.js",
     "build": "parcel build index.pug --public-url ./"
   },
