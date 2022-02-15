@@ -1,0 +1,37 @@
+{
+  "name": "middle.messenger.praktikum.yandex",
+  "version": "0.0.1",
+  "description": "chat app",
+  "scripts": {
+    "dev": "parcel index.pug 404.pug 500.pug login.pug profile.pug profile-password.pug registration.pug",
+    "start": "npm install && npm run build && node ./server.js",
+    "build": "parcel build index.pug --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreySukhov/middle.messenger.praktikum.yandex.git"
+  },
+  "engines": {
+    "node": "16.14.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreySukhov/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/AndreySukhov/middle.messenger.praktikum.yandex#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "parcel": "^2.2.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.2.1",
+    "express": "^4.17.2",
+    "path": "^0.12.7",
+    "postcss": "^8.4.6",
+    "postcss-custom-properties": "^12.1.4",
+    "postcss-import": "^14.0.2",
+    "postcss-url": "^10.1.3"
+  }
+}

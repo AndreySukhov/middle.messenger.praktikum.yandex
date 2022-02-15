@@ -1,0 +1,10 @@
+mixin chatHeader(avatarSrc, userName)
+  div.chat-header
+    div.chat-header__details
+      div.chat-header__avatar
+        +circleWrap('secondary', 35)
+          +avatar(avatarSrc)
+      div #{userName}
+    div.chat-header__menu
+      button(type="button").dots-btn
+

@@ -1,0 +1,7 @@
+mixin photoMessage(src,type,dateTime)
+  div(class=`chat-photo-message--${type}`).chat-photo-message
+    div.chat-photo-message__dateTime
+      span.text.text--s.text--white #{dateTime}
+    div.chat-photo-message__media
+      img(src=src, alt="")
+

@@ -1,0 +1,18 @@
+include ../../mixins/markupHelpers/box/index
+include ../../mixins/forms/formRow/index
+include ../../mixins/forms/input/index
+include ../../mixins/forms/button/index
+
+block content
+  div.centered-layout.centered-layout--spaced
+     +box(true, 'Вход')
+        form.form
+          +formRow()
+            +input('Логин')(name="login")
+          +formRow()
+            +input('Пароль')(name="password", type="password")
+          +formRow(true)
+            div.button-row
+              +button('Авторизоваться')(type="submit")
+            div.button-row
+              +button('Нет аккаунта?', undefined, true)(href="/registration.pug")

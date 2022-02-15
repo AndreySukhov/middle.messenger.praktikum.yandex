@@ -1,0 +1,8 @@
+include ./errorPageLayout
+include ../../mixins/markupHelpers/errorStatus/index
+include ../../mixins/forms/button/index
+
+block content
+  +errorPageLayout()
+    +errorStatus('500', 'Не туда попали', 'Мы уже фиксим', 'index.pug')
+      +button('Назад к чатам', undefined, true)(href='index.pug')

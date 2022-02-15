@@ -1,0 +1,30 @@
+include ../../mixins/markupHelpers/circleWrap/index
+include ../../mixins/markupHelpers/box/index
+
+include ../../mixins/forms/formRow/index
+include ../../mixins/forms/button/index
+include ../../mixins/forms/input/index
+
+include ../../mixins/markupHelpers/avatar/index
+
+block content
+  div.profile-layout
+    aside.profile-layout__aside
+      a(href="/index.pug").aside-clickable-area
+        +circleWrap('primary', 28)
+          include ../../assets/icons/arrow-left.svg
+    div.profile-layout__main
+      div.centered-layout
+        +box(true)
+          form.form
+            +formRow()
+              +avatar(130).tc
+            +formRow()
+              +input('Старый пароль')(name="oldPassword", type="password")
+            +formRow()
+              +input('Новый пароль')(name="newPassword", type="password")
+            +formRow()
+              +input('Повторите новый пароль')(type="password")
+            +formRow()
+              div.button-row
+                +button('Сохранить')(type="submit")
